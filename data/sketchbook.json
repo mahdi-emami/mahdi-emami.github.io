@@ -1,0 +1,14 @@
+[
+  {
+    "page": 1,
+    "title": "Ideas in progress",
+    "description": "Prototype notes, diagrams, mechanical studies, interface fragments, and experiments.",
+    "image": "assets/images/sketchbook/page-01.jpg"
+  },
+  {
+    "page": 2,
+    "title": "Prototype studies",
+    "description": "A visual archive for experiments, prototypes, and ideas that are still finding their final form.",
+    "image": "assets/images/sketchbook/page-02.jpg"
+  }
+]
