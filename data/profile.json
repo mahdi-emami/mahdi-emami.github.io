@@ -1,8 +1,9 @@
 {
-  "name": "",
-  "role": "",
-  "intro": "",
-  "email": "",
-  "github": "",
-  "linkedin": ""
+  "name": "DRAFT — Your Name",
+  "role": "DRAFT — Your Role",
+  "intro": "DRAFT — Write a short introduction about yourself here.",
+  "email": "DRAFT — your@email.com",
+  "github": "DRAFT — https://github.com/yourusername",
+  "linkedin": "DRAFT — https://linkedin.com/in/yourusername",
+  "status": "draft"
 }
