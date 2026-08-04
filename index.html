@@ -13,42 +13,45 @@
 <body>
   <header class="site-header">
     <a class="logo" href="#top">ME<span>.</span></a>
-    <nav>
-      <a href="#work">Work</a><a href="#skills">Skills</a><a href="#sketchbook">Sketchbook</a><a href="#contact">Contact</a>
-    </nav>
+    <nav><a href="#work">Work</a><a href="#prototypes">Prototypes</a><a href="#skills">Skills</a><a href="#sketchbook">Sketchbook</a><a href="#contact">Contact</a></nav>
   </header>
 
   <main id="top">
     <section class="hero">
-      <p class="eyebrow">Portfolio / 2026</p>
-      <h1>Mahdi Emami</h1>
-      <p class="hero-copy">A personal space for selected work, skills, prototypes, experiments, and ideas.</p>
+      <p class="eyebrow" id="heroRole">Portfolio / 2026</p>
+      <h1 id="heroName">Your Name</h1>
+      <p class="hero-copy" id="heroIntro">Your introduction will appear here.</p>
       <a class="text-link" href="#work">Explore selected work <span>↘</span></a>
     </section>
 
     <section id="work" class="section">
       <div class="section-heading"><span>01</span><h2>Selected Work</h2></div>
-      <div class="empty-state"><p>No projects added yet.</p><small>Add your projects to <code>data/projects.json</code>.</small></div>
+      <div id="projectsContainer" class="project-grid"></div>
+    </section>
+
+    <section id="prototypes" class="section prototypes-section">
+      <div class="section-heading"><span>02</span><h2>Prototypes</h2></div>
+      <div id="prototypesContainer" class="project-grid"></div>
     </section>
 
     <section id="skills" class="section skills-section">
-      <div class="section-heading"><span>02</span><h2>Skills</h2></div>
-      <div class="empty-state"><p>No skills added yet.</p><small>Add your skills to <code>data/skills.json</code>.</small></div>
+      <div class="section-heading"><span>03</span><h2>Skills</h2></div>
+      <div id="skillsContainer" class="skills-list"></div>
     </section>
 
     <section id="sketchbook" class="section sketchbook-section">
-      <div class="section-heading"><span>03</span><h2>Sketchbook</h2></div>
-      <div class="sketchbook-intro"><p>Your sketches, prototypes, experiments, and unfinished ideas will live here.</p><button id="openBook" class="book-button">Open sketchbook ↗</button></div>
+      <div class="section-heading"><span>04</span><h2>Sketchbook</h2></div>
+      <div class="sketchbook-intro"><p>A collection of sketches, experiments, notes, and unfinished ideas.</p><button id="openBook" class="book-button">Open sketchbook ↗</button></div>
       <div class="book" id="book" aria-label="Sketchbook">
         <button class="book-close" id="closeBook" aria-label="Close sketchbook">×</button>
-        <div class="book-page page-left"><span>SKETCHBOOK</span><small>Your experiments</small></div>
-        <div class="book-page page-right"><span>EMPTY</span><h3>No pages yet</h3><p>Add your sketchbook pages to <code>data/sketchbook.json</code>.</p><button id="nextPage" class="page-next">Close →</button></div>
+        <div class="book-page page-left"><span>SKETCHBOOK</span><small id="bookSubtitle">Your experiments</small></div>
+        <div class="book-page page-right"><span id="bookNumber">01</span><h3 id="bookTitle">No pages yet</h3><p id="bookDescription">Add a page to data/sketchbook.json.</p><button id="nextPage" class="page-next">Close →</button></div>
       </div>
     </section>
 
     <section id="contact" class="section contact-section">
-      <div class="section-heading"><span>04</span><h2>Contact</h2></div>
-      <div class="contact-content"><h2>Let's connect.</h2><p class="empty-contact">Add your contact information to <code>data/profile.json</code>.</p></div>
+      <div class="section-heading"><span>05</span><h2>Contact</h2></div>
+      <div class="contact-content"><h2>Let's connect.</h2><a id="contactEmail" class="contact-email" href="#">your@email.com ↗</a><div class="contact-links"><a id="githubLink" href="#" target="_blank" rel="noreferrer">GitHub</a><a id="linkedinLink" href="#" target="_blank" rel="noreferrer">LinkedIn</a></div></div>
     </section>
   </main>
   <footer><span>© 2026</span><span>Built with curiosity.</span></footer>
