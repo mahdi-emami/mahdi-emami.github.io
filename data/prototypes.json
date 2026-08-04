@@ -1,1 +1,10 @@
-[]
+[
+  {
+    "title": "DRAFT — Sample Prototype",
+    "category": "Prototype category",
+    "description": "This is a draft sample. Replace this with your own prototype, process, and details.",
+    "year": "2026",
+    "image": "assets/images/prototypes/draft.jpg",
+    "status": "draft"
+  }
+]
