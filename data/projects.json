@@ -8,4 +8,13 @@
     "featured": true,
     "status": "draft"
   }
+   {
+    "title": "DRAFT — Sample Project2",
+    "category": "Your category",
+    "description": "This is a draft sample. Replace this content with your own project details.",
+    "year": "2026",
+    "image": "assets/images/projects/draft.jpg",
+    "featured": true,
+    "status": "draft"
+  }
 ]
