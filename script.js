@@ -1,7 +1,19 @@
+const BASE_PATH = window.location.pathname.endsWith('/') ? window.location.pathname : window.location.pathname.replace(/\/[^/]*$/, '/');
+
 async function loadJSON(path) {
-  const response = await fetch(path);
-  if (!response.ok) throw new Error(`Could not load ${path}`);
-  return response.json();
+  const url = new URL(`${BASE_PATH}${path}`, window.location.origin);
+  const response = await fetch(`${url.href}?v=${Date.now()}`, { cache: 'no-store' });
+  if (!response.ok) throw new Error(`Could not load ${url.href} (${response.status})`);
+  const data = await response.json();
+  return data;
+}
+
+function showLoadError(error) {
+  console.error('Site content could not be loaded:', error);
+  const message = document.createElement('div');
+  message.className = 'site-load-error';
+  message.innerHTML = `<strong>Content loading error</strong><span>${error.message}</span>`;
+  document.body.prepend(message);
 }
 
 function renderProfile(profile) {
@@ -91,7 +103,7 @@ async function initSite() {
     renderSkills(skills);
     renderSketchbook(sketchbook);
   } catch (error) {
-    console.error('Site content could not be loaded:', error);
+    showLoadError(error);
   }
 }
 
