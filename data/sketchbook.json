@@ -1,1 +1,9 @@
-[]
+[
+  {
+    "page": 1,
+    "title": "DRAFT — Sample Sketchbook Page",
+    "description": "This is a draft sample. Replace this with your own sketch, note, experiment, or prototype story.",
+    "image": "assets/images/sketchbook/draft.jpg",
+    "status": "draft"
+  }
+]
