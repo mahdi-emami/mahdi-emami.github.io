@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Mahdi Emami — portfolio, projects, prototypes, and sketchbook." />
+  <title>Mahdi Emami — Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Space+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a class="logo" href="#top">ME<span>.</span></a>
+    <nav>
+      <a href="#work">Work</a>
+      <a href="#skills">Skills</a>
+      <a href="#sketchbook">Sketchbook</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <p class="eyebrow">Portfolio / 2026</p>
+      <h1>Mahdi Emami</h1>
+      <p class="hero-copy">I design, build, prototype, and explore ideas at the intersection of engineering and creative technology.</p>
+      <a class="text-link" href="#work">Explore selected work <span>↘</span></a>
+    </section>
+
+    <section id="work" class="section">
+      <div class="section-heading">
+        <span>01</span>
+        <h2>Selected Work</h2>
+      </div>
+      <div class="project-grid">
+        <article class="project-card featured">
+          <div class="project-visual visual-robot"><span>ZETA</span></div>
+          <div class="project-meta"><span>Robotics / Engineering</span><span>01</span></div>
+          <h3>ZETA 4DOF Robo Arm</h3>
+          <p>A robotic arm project combining mechanical design, control, and hands-on prototyping.</p>
+        </article>
+        <article class="project-card">
+          <div class="project-visual visual-action"><span>MA</span></div>
+          <div class="project-meta"><span>Software / Product</span><span>02</span></div>
+          <h3>Meli Action</h3>
+          <p>An evolving digital project focused on building useful tools and practical experiences.</p>
+        </article>
+        <article class="project-card">
+          <div class="project-visual visual-notes"><span>DOT</span></div>
+          <div class="project-meta"><span>Systems / Notes</span><span>03</span></div>
+          <h3>Dotchecknote</h3>
+          <p>A space for ideas, experiments, and structured thinking.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="skills" class="section skills-section">
+      <div class="section-heading"><span>02</span><h2>Skills</h2></div>
+      <div class="skills-list">
+        <div><span>01</span><strong>Engineering</strong><p>Robotics, mechanical systems, prototyping, problem solving</p></div>
+        <div><span>02</span><strong>Development</strong><p>Web development, software projects, Git, GitHub</p></div>
+        <div><span>03</span><strong>Design</strong><p>Product thinking, interface design, visual systems</p></div>
+        <div><span>04</span><strong>Prototyping</strong><p>From sketches and concepts to functional prototypes</p></div>
+      </div>
+    </section>
+
+    <section id="sketchbook" class="section sketchbook-section">
+      <div class="section-heading"><span>03</span><h2>Sketchbook</h2></div>
+      <div class="sketchbook-intro">
+        <p>A collection of sketches, prototypes, experiments, and unfinished ideas. The things that usually happen before the polished project exists.</p>
+        <button id="openBook" class="book-button">Open sketchbook ↗</button>
+      </div>
+      <div class="book" id="book" aria-label="Sketchbook">
+        <button class="book-close" id="closeBook" aria-label="Close sketchbook">×</button>
+        <div class="book-page page-left"><span>SKETCHBOOK</span><small>Selected experiments</small></div>
+        <div class="book-page page-right"><span>01</span><h3>Ideas in progress</h3><p>Prototype notes, diagrams, mechanical studies, interface fragments, and experiments will live here.</p><button id="nextPage" class="page-next">Next page →</button></div>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact-section">
+      <div class="section-heading"><span>04</span><h2>Contact</h2></div>
+      <div class="contact-content">
+        <h2>Have an idea?<br><em>Let's connect.</em></h2>
+        <a class="contact-email" href="mailto:mahdiemami1384@gmail.com">mahdiemami1384@gmail.com ↗</a>
+        <div class="contact-links"><a href="https://github.com/mahdi-emami" target="_blank" rel="noreferrer">GitHub</a><a href="https://www.linkedin.com" target="_blank" rel="noreferrer">LinkedIn</a></div>
+      </div>
+    </section>
+  </main>
+
+  <footer><span>© 2026 Mahdi Emami</span><span>Built with curiosity.</span></footer>
+  <script src="script.js"></script>
+</body>
+</html>
