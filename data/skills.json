@@ -1,0 +1,18 @@
+[
+  {
+    "title": "Engineering",
+    "description": "Robotics, mechanical systems, prototyping, and problem solving."
+  },
+  {
+    "title": "Development",
+    "description": "Web development, software projects, Git, and GitHub."
+  },
+  {
+    "title": "Design",
+    "description": "Product thinking, interface design, and visual systems."
+  },
+  {
+    "title": "Prototyping",
+    "description": "From sketches and concepts to functional prototypes."
+  }
+]
